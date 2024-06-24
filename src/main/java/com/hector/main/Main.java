@@ -38,7 +38,11 @@ public class Main {
         if (currentSupportedCodes == null) return;
 
         while(true){
-            System.out.println("Write 'H' to access conversion History,\nWrite 'C' to start a new Conversation");
+            if(conversionRecords.isEmpty()){
+                System.out.println("\nWrite 'C' to start a new Conversation");
+            }else{
+                System.out.println("\nWrite 'H' to access conversion History,\nWrite 'C' to start a new Conversation");
+            }
             switch (teclado.nextLine().strip().toUpperCase()) {
                 case "H" -> printConversionRecords(conversionRecords);
                 case "C" -> {
@@ -67,11 +71,10 @@ public class Main {
 
                         var conversionRecord = new ConversionRecord(baseCurrency, amount, targetCurrency, resultingAmount, new Date());
                         addConversionRecord(conversionRecord);
-
+                        saveConversionRecords();
                         System.out.println("To continue with the next conversion press Enter, otherwise write EXIT to leave the program");
                         String nextInput = teclado.nextLine().strip().toUpperCase();
                         if (nextInput.equals("EXIT")) {
-                            saveConversionRecords();
                             System.out.println(conversionRecords);
                             return;
                         }

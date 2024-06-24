@@ -54,10 +54,7 @@ public class SupportedCodes {
 
 
         int codeCount = 0;
-        int codesPLine = 5;
-        System.out.println("width: " + terminalWidth);
-        System.out.println("maxnamelenght: " + maxNameLenght);
-        System.out.println("codes per line: " + codesPLine);
+        int codesPLine = 4;
 
         for (SupportedCode supportedCode : supported_codes) {
             int hyphenCount = maxNameLenght - supportedCode.getName().length() + 1;

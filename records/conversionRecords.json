@@ -1,0 +1,30 @@
+[
+  {
+    "BaseCurrency": "MXN",
+    "TargetCurrency": "USD",
+    "BaseAmount": 1000.0,
+    "ResultingAmount": 54.260002,
+    "TimeConversion": "Jun 20, 2024, 1:37:31 PM"
+  },
+  {
+    "BaseCurrency": "MXN",
+    "TargetCurrency": "USD",
+    "BaseAmount": 2000.0,
+    "ResultingAmount": 108.520004,
+    "TimeConversion": "Jun 20, 2024, 1:37:44 PM"
+  },
+  {
+    "BaseCurrency": "COP",
+    "TargetCurrency": "MXN",
+    "BaseAmount": 30000.0,
+    "ResultingAmount": 0.0,
+    "TimeConversion": "Jun 20, 2024, 1:41:24 PM"
+  },
+  {
+    "BaseCurrency": "USD",
+    "TargetCurrency": "MXN",
+    "BaseAmount": 300.0,
+    "ResultingAmount": 5447.0703,
+    "TimeConversion": "Jun 23, 2024, 8:27:28 PM"
+  }
+]
